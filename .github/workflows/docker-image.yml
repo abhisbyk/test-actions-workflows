@@ -50,7 +50,7 @@ jobs:
           # Using the commit SHA as the git tag
           VERSION=$GITHUB_SHA
         fi
-
+        VERSION="latest"
         echo IMAGE_ID=$IMAGE_ID
         echo VERSION=$VERSION
         docker tag $IMAGE_NAME $IMAGE_ID:$VERSION
